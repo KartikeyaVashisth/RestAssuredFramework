@@ -13,7 +13,6 @@ import com.qa.gorest.utils.ExcelUtil;
 import com.qa.gorest.utils.StringUtils;
 
 import static org.hamcrest.Matchers.*;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class CreateUserTest extends BaseTest{
 
