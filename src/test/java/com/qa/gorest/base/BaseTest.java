@@ -37,7 +37,7 @@ public class BaseTest {
 													//And need to add this ExtentReportListener class to the testng_regression.xml file at the suite level. So whenever we run the .xml file, it will get activated in Background and fetch all test results and give us a nice report.
 		config = new ConfigurationManager();
 		prop = config.initProp(); //Since initProp() method will return Properties class reference, so we can store it in prop.
-//		String baseUri = prop.getProperty("baseURI"); //Now, instead we will get the baseURI from the runner file(testng_regression.xml) file where we have <parameter name="" value="" /> tag and we will pass the key in name= instead of getting it from the Properties file.
+//		String baseUri = prop.getProperty("baseURI"); //Now, instead we will get the baseURI from the runner file(testng_regression.xml) file where we have <parameter name="" value="" /> tag and we will pass the key in name= instead of getting it from the Properties file. We can use this method of reading the value of baseURI from Properties file when we have different BaseURI for diff environments like qa, stage, dev and prod.
 		this.baseURI = baseURI; //This will assign the baseURI which we have got from the runner file to the baseURI of the class variable.
 //		restClient = new RestClient(prop, baseURI ); //Added in the @BeforeMethod annotation so that an object of restClient is created before each Test is executed.
 		
