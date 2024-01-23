@@ -130,7 +130,7 @@ public class RestClient {
 		}
 		
 		if(headersMap!=null) {
-			specBuilder.addHeaders(null);
+			specBuilder.addHeaders(headersMap);
 		}
 		
 		return specBuilder.build();
